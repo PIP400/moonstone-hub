@@ -24,6 +24,7 @@ local UI_COLORS = {
     Header = Color3.fromRGB(35, 35, 35),
     Button = Color3.fromRGB(0, 120, 255),
     Close = Color3.fromRGB(255, 0, 0),
+    
     Text = Color3.fromRGB(255, 255, 255)
 }
 
