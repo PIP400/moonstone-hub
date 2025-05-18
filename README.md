@@ -14,7 +14,7 @@ A safe and legitimate script for gifting fruits in Blox Fruits.
 
 1. Copy this loadstring:
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PIP400/moonstone-hub/main/moonstone_hub.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PIP400/moonstone-hub/main/moonstone_hub.lua", true))()
 ```
 
 2. Open Delta executor
